@@ -1,9 +1,9 @@
-Bacteria[] woah;
+Bacteria[] stuff;
  void setup(){     
  	size(500,500);
- 	woah = new Bacteria[100];
- 	for(int i = 0; i < woah.length; i++){
- 		woah[i] = new Bacteria();
+ 	stuff = new Bacteria[100];
+ 	for(int i = 0; i < stuff.length; i++){
+ 		stuff[i] = new Bacteria();
  	}
  }   
  void draw(){

@@ -18,13 +18,16 @@ Bacteria[] stuff;
  }  
  class Bacteria    
  {     
- 	int myX, myY, myColor, mySize;
+ 	int myX, myY, myColor1, myColor2, myColor3, myColor4,  mySize;
 
  	Bacteria(){
  		myX = 100;
  		myY = 50;
  		mySize = (int)(Math.random() * 30) + 1;
- 		myColor = (int)(Math.random() * 254) + 1;
+ 		myColor1 = (int)(Math.random() * 254) + 1;
+   myColor2 = (int)(Math.random() * 254) + 1;
+   myColor3 = (int)(Math.random() * 254) + 1;
+   myColor4 = (int)(Math.random() * 254) + 1;
  		move();
  	}
  	void move(){
@@ -41,7 +44,7 @@ Bacteria[] stuff;
  		}
  	}
  	void show(){
- 		fill(myColor, myColor, myColor, myColor);
+ 		fill(myColor1, myColor2, myColor3, myColor4);
  		ellipse(myX, myY, mySize, mySize);
  	}
  }    
